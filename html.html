@@ -9,19 +9,27 @@
 <body>
     <header>
         <h1>Available Apartments for Rent</h1>
+        <select id="locationSelect">
+            <option value="">Select a location</option>
+            <option value="">All Locations</option> <!-- All Locations option -->
+            <option value="Downtown">Downtown</option>
+            <option value="Uptown">Uptown</option>
+            <option value="Lakeside">Lakeside</option>
+            <option value="City Center">City Center</option> <!-- New location -->
+        </select>
         <input type="text" id="searchInput" placeholder="Search by location...">
     </header>
     <main id="apartmentList">
-        <div class="apartment" data-location="Downtown">
+        <div class="apartment" data-location="Downtown- شوف">
             <h3>Apartment 1</h3>
-            <img src="images/house.jpg" alt="Apartment 3" class="apartment-image">
-            <p>Location: Downtown</p>
+            <img src="images/house.jpg" alt="Apartment 1" class="apartment-image">
+            <p>Location:شوف</p>
             <p>Owner: John Doe</p>
             <p>Contact: (555) 123-4567</p>
         </div>
         <div class="apartment" data-location="Uptown">
             <h3>Apartment 2</h3>
-            <img src="images/house.jpg" alt="Apartment 3" class="apartment-image">
+            <img src="images/house.jpg" alt="Apartment 2" class="apartment-image">
             <p>Location: Uptown</p>
             <p>Owner: Jane Smith</p>
             <p>Contact: (555) 987-6543</p>
@@ -32,6 +40,20 @@
             <p>Location: Lakeside</p>
             <p>Owner: Mike Johnson</p>
             <p>Contact: (555) 321-9876</p>
+        </div>
+        <div class="apartment" data-location="City Center"> <!-- New apartment added -->
+            <h3>Apartment 4</h3>
+            <img src="images/house.jpg" alt="Apartment 4" class="apartment-image">
+            <p>Location: City Center</p>
+            <p>Owner: Sarah Lee</p>
+            <p>Contact: (555) 654-3210</p>
+        </div>
+        <div class="apartment" data-location="City Center"> <!-- New apartment added -->
+            <h3>Apartment 4</h3>
+            <img src="images/house.jpg" alt="Apartment 4" class="apartment-image">
+            <p>Location: City Center</p>
+            <p>Owner: Sarah Lee</p>
+            <p>Contact: (555) 654-3210</p>
         </div>
     </main>
     <footer>
